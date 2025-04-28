@@ -40,7 +40,7 @@ struct PostBuilder: JSONRequestBuilderProtocol {
     }
 }
 
-class PostService: APIClient {
+class PostService {
     
     let apiClient: APIClient
     
