@@ -1,0 +1,67 @@
+# macOS
+.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcworkspace/
+*.xcuserdata/
+xcuserdata/
+xcshareddata/
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.xcuserdata
+*.hmap
+*.gpx
+*.moved-aside
+
+# Derived Data & Build Products
+DerivedData/
+build/
+*/build/*
+*.dSYM/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+Carthage/Checkouts/
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Firebase
+firebase-debug.log
+GoogleService-Info.plist
+
+# Certificates & Provisioning Profiles
+*.mobileprovision
+*.xcconfig
+*.p8
+*.p12
+*.cer
+*.crt
+*.pem
+
+# Ignore IDEs
+.idea/
+.vscode/
+
+# Misc
+*.lock
+DemoStructure.xcworkspace/xcshareddata/swiftpm/Package.resolved

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  DemoStructure
+
+  Created by Chhan Sophearith  on 25/4/25.
+  
+*/
+
+// MARK: Welcome Screen
+"hello" = "Hello";
