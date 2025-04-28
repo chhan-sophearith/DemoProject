@@ -22,7 +22,7 @@ class HomeViewModel: ObservableObject {
         self.postService = postService
     }
 
-    func changeLang(code: String)  {
+    func changeLang(code: String) {
         UserDefault.shared.setLanguageCode(with: code)
         currentLanguage = code
     }

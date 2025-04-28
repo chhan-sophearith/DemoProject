@@ -12,7 +12,7 @@ struct BaseModel: Codable {
 struct APIRequest {
     let resource: Endpoints
     let method: HTTPMethod
-    var parameters: Parameters? = nil
+    var parameters: Parameters?
     var header: Bool = false
     var isLoading: Bool = true
 }

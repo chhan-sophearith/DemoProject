@@ -8,9 +8,7 @@ import SwiftUI
 
 class APIClient: NSObject {
     
-    func performRequest<T: Codable>(request: RequestBuilderProtocol,
-                                callBack: @escaping (T) -> Void,
-                                errorCallBack: ((BaseModel?) -> Void)? = nil) {
+    func performRequest<T: Codable>(request: RequestBuilderProtocol, callBack: @escaping (T) -> Void, errorCallBack: ((BaseModel?) -> Void)? = nil) {
         if Reachability.isConnectedToNetwork() {
             let newRequest = validateRequestApi(reguest: request)
             // request to api
@@ -46,12 +44,12 @@ class APIClient: NSObject {
                             }
                         case 401:
                             Utilize.shared.debugger(urlRequest: newRequest, data: data, error: true)
-                            Utilize.shared.validateModel(model: BaseModel.self, data: data) { objectData in
+                            Utilize.shared.validateModel(model: BaseModel.self, data: data) { _ in
                                 errorCallBack?(nil)
                             }
                         case 422:
                             Utilize.shared.debugger(urlRequest: newRequest, data: data, error: true)
-                            Utilize.shared.validateModel(model: BaseModel.self, data: data) { objectData in
+                            Utilize.shared.validateModel(model: BaseModel.self, data: data) { _ in
                                 errorCallBack?(nil)
                             }
                         case (500...503):

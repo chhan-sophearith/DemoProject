@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 14.0, *)
-//@main // Not using 
+// @main // Not using 
 struct DemoStructureApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
