@@ -22,4 +22,16 @@ enum HTTPMethod: String {
 class Constant {
     static let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     static let appBuildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
+    
+    static var envName: String {
+        #if DEV
+        return "DEV (\(Constant.appBuildNumber ?? ""))"
+        #elseif UAT
+        return "UAT (\(Constant.appBuildNumber ?? ""))"
+        #elseif SIT
+        return "SIT (\(Constant.appBuildNumber ?? ""))"
+        #else
+            return ""
+        #endif
+    }
 }

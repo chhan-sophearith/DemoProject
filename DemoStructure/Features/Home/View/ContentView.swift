@@ -14,6 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("\(Constant.envName)")
+            
             Button {
                 viewModel.isNavigate.toggle()
             } label: {

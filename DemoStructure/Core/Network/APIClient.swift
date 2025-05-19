@@ -20,7 +20,7 @@ class APIClient: NSObject {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                 LoadingView.shared.hide()
                                 errorCallBack?(nil)
-                             //   self.internet = false
+                             // self.internet = false
                             }
                         case NSURLErrorTimedOut, NSURLErrorCannotConnectToHost:
                             LoadingView.shared.hide()

@@ -10,7 +10,7 @@ import SwiftUI
 struct BaseUrls {
     
     static var url: String {
-        #if Dev
+        #if DEV
             return "https://jsonplaceholder.typicode.com"
         #elseif UAT
             return "https://jsonplaceholder.typicode.com"
@@ -18,18 +18,6 @@ struct BaseUrls {
             return "https://jsonplaceholder.typicode.com"
         #else
             return "https://jsonplaceholder.typicode.com"
-        #endif
-    }
-
-    static var name: String {
-        #if Dev
-        return "Dev (\(Constant.appBuildNumber ?? ""))"
-        #elseif UAT
-        return "UAT (\(Constant.appBuildNumber ?? ""))"
-        #elseif SIT
-        return "SIT (\(Constant.appBuildNumber ?? ""))"
-        #else
-            return ""
         #endif
     }
 }
