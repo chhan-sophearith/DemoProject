@@ -32,4 +32,9 @@ final class DependencyContainer {
     func makeHomeModel() -> HomeViewModel {
         return HomeViewModel(homeService: homeService, postService: postServince)
     }
+    
+    // MARK: - ViewModels
+    func makeLoginViewModel() -> LoginViewModel {
+        return LoginViewModel()
+    }
 }

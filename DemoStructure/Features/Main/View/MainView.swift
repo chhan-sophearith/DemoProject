@@ -57,7 +57,7 @@ struct MainView: View {
                 HStack(spacing: 15) {
                     Image(.calenderIc)
                         .frame(width: 20, height: 20)
-                    TextSwiftUI(title: "27 Mar, 2025", color: .white)
+                    TextSwiftUI(title: "27 Mar, 2025", size: .medium, color: .white)
                 }
                 
                 Button {
@@ -99,7 +99,7 @@ struct MainView: View {
                             Image(.enFlagIc)
                                 .frame(width: 24, height: 18)
                             
-                            TextSwiftUI(title: "EN", color: .white)
+                            TextSwiftUI(title: "EN", size: .medium, color: .white)
                         }
                         .frame(height: 32)
                         .padding(.horizontal, 10)

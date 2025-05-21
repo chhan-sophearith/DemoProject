@@ -18,6 +18,26 @@ extension Color {
         startPoint: .leading,
         endPoint: .trailing
     )
+    
+    static let gradientLoginBackground = LinearGradient(
+        gradient: Gradient(colors: [
+            Color(hex: "D2E0A1"),
+            Color(hex: "D2F7FF"),
+            Color(hex: "66AEFF")
+        ]),
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+    )
+    
+    static let gradientBorderTextField = LinearGradient(
+        gradient: Gradient(colors: [
+            Color(hex: "D2E0A1"),
+            Color(hex: "D2F7FF"),
+            Color(hex: "66AEFF")
+        ]),
+        startPoint: .leading,
+        endPoint: .trailing
+    )
 }
 
 extension Color {
