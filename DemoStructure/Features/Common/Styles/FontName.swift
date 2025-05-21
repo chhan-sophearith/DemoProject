@@ -8,39 +8,54 @@
 import Foundation
 
 enum FontName {
-    case regular
-    case thin
-    case light
     case extraLight
+    case regular
+    case light
     case medium
-    case semiBold
     case bold
+    case semiBold
     case extraBold
-    case black
+    case extraLightItalic
+    case lightItalic
+    case italic
+    case mediumItalic
+    case semiBoldItalic
+    case extraBoldItalic
+    case boldItalic
     case other(String)
     
     var name: String {
         switch self {
-        case .regular:
-            return "Lexend-Regular"
-        case .thin:
-            return "Lexend-Thin"
         case .extraLight:
-            return "Lexend-ExtraLight"
+            return "PlusJakartaSans-ExtraLight"
+        case .regular:
+            return "PlusJakartaSans-Regular"
         case .light:
-            return "Lexend-Light"
+            return "PlusJakartaSans-Light"
         case .medium:
-            return "Lexend-Medium"
+            return "PlusJakartaSans-Medium"
         case .semiBold:
-            return "Lexend-SemiBold"
+            return "PlusJakartaSans-SemiBold"
         case .bold:
-            return "Lexend-Bold"
+            return "PlusJakartaSans-Bold"
         case .extraBold:
-            return "Lexend-ExtraBold"
-        case .black:
-            return "Lexend-Black"
-        default:
-            return "Lexend-Regular"
+            return "PlusJakartaSans-ExtraBold"
+        case .extraLightItalic:
+            return "PlusJakartaSans-ExtraLightItalic"
+        case .lightItalic:
+            return "PlusJakartaSans-LightItalic"
+        case .italic:
+            return "PlusJakartaSans-Italic"
+        case .mediumItalic:
+            return "PlusJakartaSans-MediumItalic"
+        case .semiBoldItalic:
+            return "PlusJakartaSans-SemiBoldItalic"
+        case .extraBoldItalic:
+            return "PlusJakartaSans-ExtraBoldItalic"
+        case .boldItalic:
+            return "PlusJakartaSans-BoldItalic."
+        case .other(let fontName):
+            return fontName
         }
     }
 }
