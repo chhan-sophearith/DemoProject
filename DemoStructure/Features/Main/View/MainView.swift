@@ -9,56 +9,42 @@ import SwiftUI
 
 struct MainView: View {
     @ObservedObject var mainVM = MainViewModel()
-    //  @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
     var body: some View {
-      //  NavigationView {
-            ZStack(alignment: .top) {
-                Color.white.edgesIgnoringSafeArea(.all)
+        ZStack(alignment: .top) {
+            Color.white.edgesIgnoringSafeArea(.all)
+            
+            VStack(spacing: 0) {
+                headerView
                 
-                VStack(spacing: 0) {
-                    headerView
-                    
-                    HStack(spacing: 0) {
-                        // Tabbar
-                        HStack {
-                            VStack {
-                                ForEach(0..<mainVM.mainTabList.count, id: \.self) { index in
-                                    TabItemWidget(
-                                        icon: mainVM.mainTabList[index].icon,
-                                        title: mainVM.mainTabList[index].title,
-                                        isSelected: mainVM.tabIndex == index,
-                                        index: index) {
-                                            mainVM.tabIndex = index
-                                        }
-                                        .padding(.bottom, 20)
-                                }
-                            }
-                            .padding(25)
-                            .background(Color.tabbar.edgesIgnoringSafeArea(.all))
-                        }
-                        
-                        Spacer()
+                HStack(spacing: 0) {
+                    tabbarView
+                    Spacer()
+                    NavigationView {
                         switch mainVM.tabIndex {
                         case 0:
+                            
                             NavigationLink {
                                 EmptyView()
                             } label: {
                                 Text("Tap ===")
                             }
-                        case 1: EmptyView()
-                        case 2: EmptyView()
-                        case 3: EmptyView()
+                            
+                        case 1:
+                            Text("Hello world!")
+                        case 2:
+                            Text("welcome!")
+                        case 3:
+                            Text("Hi!")
                         default: EmptyView()
                         }
-                        Spacer()
                     }
+                    .navigationViewStyle(StackNavigationViewStyle())
+                    Spacer()
                 }
-
             }
-          //  .navigationViewStyle(.stack)
         }
-  //  }
+    }
     
     var headerView: some View {
         HStack(alignment: .top) {
@@ -138,5 +124,26 @@ struct MainView: View {
         }
         .frame(height: 60)
         .background(Color.navigationBar.edgesIgnoringSafeArea(.top))
+    }
+    
+    var tabbarView: some View {
+        VStack {
+            VStack {
+                ForEach(0..<mainVM.mainTabList.count, id: \.self) { index in
+                    TabItemWidget(
+                        icon: mainVM.mainTabList[index].icon,
+                        title: mainVM.mainTabList[index].title,
+                        isSelected: mainVM.tabIndex == index,
+                        index: index) {
+                            mainVM.tabIndex = index
+                        }
+                        .padding(.bottom, 20)
+                }
+            }
+            .padding(25)
+            Spacer()
+        }
+        .frame(maxHeight: .infinity)
+        .background(Color.tabbar.edgesIgnoringSafeArea(.all))
     }
 }

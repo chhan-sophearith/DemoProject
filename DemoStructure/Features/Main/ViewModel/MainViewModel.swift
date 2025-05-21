@@ -17,6 +17,6 @@ class MainViewModel: ObservableObject {
         .init(icon: .merchantIc, title: "Merchant"),
         .init(icon: .agentIc, title: "Agent"),
         .init(icon: .surveyIc, title: "Survey"),
-        .init(icon: .calculatorIc, title: "Calculator"),
+        .init(icon: .calculatorIc, title: "Calculator")
     ]
 }
