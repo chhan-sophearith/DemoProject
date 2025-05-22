@@ -1,130 +1,215 @@
 {
-  "sections": [
+  "data": [
     {
-      "section_id": "section_1",
-      "section": "Personal Information",
-      "content": [
+      "loanType": "Auto Loan",
+      "sections": [
         {
-          "content_id": "content_1_1",
-          "title": "User Info",
-          "fields": [
+          "section_id": "section_1",
+          "section": "Personal Information",
+          "content": [
             {
-              "id": "name",
-              "label": "Full Name",
-              "type": "text",
-              "options": null,
-              "rules": {
-                "required": true
-              },
-              "value": "",
-              "values": []
+              "content_id": "content_1_1",
+              "title": "User Info",
+              "fields": [
+                {
+                  "id": "name",
+                  "label": "Full Name",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
+            },
+            {
+              "content_id": "content_1_2",
+              "title": "Preferences",
+              "fields": [
+                {
+                  "id": "hobbies",
+                  "label": "Hobbies",
+                  "type": "multi_select",
+                  "options": [
+                    "Reading",
+                    "Gaming",
+                    "Travel"
+                  ],
+                  "rules": {
+                    "required": false
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
+            },
+            {
+              "content_id": "content_1_3",
+              "title": "Availability",
+              "fields": [
+                {
+                  "id": "gender",
+                  "label": "Gender",
+                  "type": "single_select",
+                  "options": [
+                    "Male",
+                    "Female",
+                    "Other"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
             }
           ]
         },
         {
-          "content_id": "content_1_2",
-          "title": "Preferences",
-          "fields": [
+          "section_id": "section_2",
+          "section": "Financial Information",
+          "content": [
             {
-              "id": "hobbies",
-              "label": "Hobbies",
-              "type": "multi_select",
-              "options": [
-                "Reading",
-                "Gaming",
-                "Travel"
-              ],
-              "rules": {
-                "required": false
-              },
-              "value": "",
-              "values": []
-            }
-          ]
-        },
-        {
-          "content_id": "content_1_3",
-          "title": "Availability",
-          "fields": [
+              "content_id": "content_2_1",
+              "title": "Income Details",
+              "fields": [
+                {
+                  "id": "monthly_income",
+                  "label": "Monthly Income",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true,
+                    "numeric": true,
+                    "min": 0
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
+            },
             {
-              "id": "gender",
-              "label": "Gender",
-              "type": "single_select",
-              "options": [
-                "Male",
-                "Female",
-                "Other"
-              ],
-              "rules": {
-                "required": true
-              },
-              "value": "",
-              "values": []
+              "content_id": "content_2_2",
+              "title": "Existing Loans",
+              "fields": [
+                {
+                  "id": "existing_loans",
+                  "label": "Do you have existing loans?",
+                  "type": "single_select",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "section_id": "section_2",
-      "section": "Financial Information",
-      "content": [
+      "loanType": "Housing Loan",
+      "sections": [
         {
-          "content_id": "content_2_1",
-          "title": "User Info",
-          "fields": [
+          "section_id": "section_1",
+          "section": "Personal Information",
+          "content": [
             {
-              "id": "name",
-              "label": "Full Name",
-              "type": "text",
-              "options": null,
-              "rules": {
-                "required": true
-              },
-              "value": "",
-              "values": []
+              "content_id": "content_1_1",
+              "title": "Applicant Info",
+              "fields": [
+                {
+                  "id": "full_name",
+                  "label": "Full Name",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "dob",
+                  "label": "Date of Birth",
+                  "type": "date",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
             }
           ]
         },
         {
-          "content_id": "content_2_2",
-          "title": "Preferences",
-          "fields": [
+          "section_id": "section_2",
+          "section": "Property Details",
+          "content": [
             {
-              "id": "hobbies",
-              "label": "Hobbies",
-              "type": "multi_select",
-              "options": [
-                "Reading",
-                "Gaming",
-                "Travel"
-              ],
-              "rules": {
-                "required": false
-              },
-              "value": "",
-              "values": []
+              "content_id": "content_2_1",
+              "title": "Property Info",
+              "fields": [
+                {
+                  "id": "property_value",
+                  "label": "Property Value",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true,
+                    "numeric": true,
+                    "min": 0
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "property_location",
+                  "label": "Property Location",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
             }
           ]
         },
         {
-          "content_id": "content_2_3",
-          "title": "Availability",
-          "fields": [
+          "section_id": "section_3",
+          "section": "Financial Information",
+          "content": [
             {
-              "id": "gender",
-              "label": "Gender",
-              "type": "single_select",
-              "options": [
-                "Male",
-                "Female",
-                "Other"
-              ],
-              "rules": {
-                "required": true
-              },
-              "value": "",
-              "values": []
+              "content_id": "content_3_1",
+              "title": "Income Details",
+              "fields": [
+                {
+                  "id": "annual_income",
+                  "label": "Annual Income",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true,
+                    "numeric": true,
+                    "min": 0
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
             }
           ]
         }

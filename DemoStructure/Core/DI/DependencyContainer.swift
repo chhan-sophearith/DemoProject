@@ -37,4 +37,9 @@ final class DependencyContainer {
     func makeLoginViewModel() -> LoginViewModel {
         return LoginViewModel()
     }
+    
+    func makeLoanViewModel() -> LoanViewModel {
+        return LoanViewModel()
+    }
+    
 }
