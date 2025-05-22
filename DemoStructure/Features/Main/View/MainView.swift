@@ -31,7 +31,7 @@ struct MainView: View {
                             }
                             
                         case 1:
-                            Text("Hello world!")
+                            LoanView()
                         case 2:
                             Text("welcome!")
                         case 3:

@@ -1,0 +1,134 @@
+{
+  "sections": [
+    {
+      "section_id": "section_1",
+      "section": "Personal Information",
+      "content": [
+        {
+          "content_id": "content_1_1",
+          "title": "User Info",
+          "fields": [
+            {
+              "id": "name",
+              "label": "Full Name",
+              "type": "text",
+              "options": null,
+              "rules": {
+                "required": true
+              },
+              "value": "",
+              "values": []
+            }
+          ]
+        },
+        {
+          "content_id": "content_1_2",
+          "title": "Preferences",
+          "fields": [
+            {
+              "id": "hobbies",
+              "label": "Hobbies",
+              "type": "multi_select",
+              "options": [
+                "Reading",
+                "Gaming",
+                "Travel"
+              ],
+              "rules": {
+                "required": false
+              },
+              "value": "",
+              "values": []
+            }
+          ]
+        },
+        {
+          "content_id": "content_1_3",
+          "title": "Availability",
+          "fields": [
+            {
+              "id": "gender",
+              "label": "Gender",
+              "type": "single_select",
+              "options": [
+                "Male",
+                "Female",
+                "Other"
+              ],
+              "rules": {
+                "required": true
+              },
+              "value": "",
+              "values": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "section_2",
+      "section": "Financial Information",
+      "content": [
+        {
+          "content_id": "content_2_1",
+          "title": "User Info",
+          "fields": [
+            {
+              "id": "name",
+              "label": "Full Name",
+              "type": "text",
+              "options": null,
+              "rules": {
+                "required": true
+              },
+              "value": "",
+              "values": []
+            }
+          ]
+        },
+        {
+          "content_id": "content_2_2",
+          "title": "Preferences",
+          "fields": [
+            {
+              "id": "hobbies",
+              "label": "Hobbies",
+              "type": "multi_select",
+              "options": [
+                "Reading",
+                "Gaming",
+                "Travel"
+              ],
+              "rules": {
+                "required": false
+              },
+              "value": "",
+              "values": []
+            }
+          ]
+        },
+        {
+          "content_id": "content_2_3",
+          "title": "Availability",
+          "fields": [
+            {
+              "id": "gender",
+              "label": "Gender",
+              "type": "single_select",
+              "options": [
+                "Male",
+                "Female",
+                "Other"
+              ],
+              "rules": {
+                "required": true
+              },
+              "value": "",
+              "values": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
