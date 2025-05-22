@@ -23,93 +23,6 @@
                   "values": []
                 }
               ]
-            },
-            {
-              "content_id": "content_1_2",
-              "title": "Preferences",
-              "fields": [
-                {
-                  "id": "hobbies",
-                  "label": "Hobbies",
-                  "type": "multi_select",
-                  "options": [
-                    "Reading",
-                    "Gaming",
-                    "Travel"
-                  ],
-                  "rules": {
-                    "required": false
-                  },
-                  "value": "",
-                  "values": []
-                }
-              ]
-            },
-            {
-              "content_id": "content_1_3",
-              "title": "Availability",
-              "fields": [
-                {
-                  "id": "gender",
-                  "label": "Gender",
-                  "type": "single_select",
-                  "options": [
-                    "Male",
-                    "Female",
-                    "Other"
-                  ],
-                  "rules": {
-                    "required": true
-                  },
-                  "value": "",
-                  "values": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "section_id": "section_2",
-          "section": "Financial Information",
-          "content": [
-            {
-              "content_id": "content_2_1",
-              "title": "Income Details",
-              "fields": [
-                {
-                  "id": "monthly_income",
-                  "label": "Monthly Income",
-                  "type": "text",
-                  "options": null,
-                  "rules": {
-                    "required": true,
-                    "numeric": true,
-                    "min": 0
-                  },
-                  "value": "",
-                  "values": []
-                }
-              ]
-            },
-            {
-              "content_id": "content_2_2",
-              "title": "Existing Loans",
-              "fields": [
-                {
-                  "id": "existing_loans",
-                  "label": "Do you have existing loans?",
-                  "type": "single_select",
-                  "options": [
-                    "Yes",
-                    "No"
-                  ],
-                  "rules": {
-                    "required": true
-                  },
-                  "value": "",
-                  "values": []
-                }
-              ]
             }
           ]
         }
@@ -120,15 +33,142 @@
       "sections": [
         {
           "section_id": "section_1",
-          "section": "Personal Information",
+          "section": "#1 Personal Information",
           "content": [
             {
               "content_id": "content_1_1",
-              "title": "Applicant Info",
+              "title": "Main Info",
               "fields": [
                 {
-                  "id": "full_name",
-                  "label": "Full Name",
+                  "id": "document_type",
+                  "label": "Document Type",
+                  "type": "single_select",
+                  "options": [
+                    "National ID",
+                    "Passport",
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "document_id",
+                  "label": "Document ID",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": false
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "first_name_in_latin",
+                  "label": "First Name In Latin",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "last_name_in_latin",
+                  "label": "Last Name In Latin",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "first_name_in_kh",
+                  "label": "First Name In Kh",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "last_name_in_kh",
+                  "label": "Last Name In KH",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "gender",
+                  "label": "Gender",
+                  "type": "single_select",
+                  "options": [
+                    "Male",
+                    "Female"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "nationality",
+                  "label": "Nationality",
+                  "type": "single_select",
+                  "options": [
+                    "Khmer",
+                    "Thai",
+                    "USA",
+                    "Other"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "marital_status",
+                  "label": "Marital Status",
+                  "type": "single_select",
+                  "options": [
+                    "Single",
+                    "Married",
+                    "Widowed",
+                    "Separated",
+                    "Divorced"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "phone_number_1",
+                  "label": "Phone Number 1",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "phone_number_2",
+                  "label": "Phone Number 2",
                   "type": "text",
                   "options": null,
                   "rules": {
@@ -147,37 +187,173 @@
                   },
                   "value": "",
                   "values": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "section_id": "section_2",
-          "section": "Property Details",
-          "content": [
-            {
-              "content_id": "content_2_1",
-              "title": "Property Info",
-              "fields": [
+                },
                 {
-                  "id": "property_value",
-                  "label": "Property Value",
-                  "type": "text",
+                  "id": "issued_date",
+                  "label": "Issued Date",
+                  "type": "date",
                   "options": null,
                   "rules": {
-                    "required": true,
-                    "numeric": true,
-                    "min": 0
+                    "required": true
                   },
                   "value": "",
                   "values": []
                 },
                 {
-                  "id": "property_location",
-                  "label": "Property Location",
+                  "id": "expired_date",
+                  "label": "Expired Date",
+                  "type": "date",
+                  "options": null,
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "cif_number",
+                  "label": "CIF Number",
                   "type": "text",
                   "options": null,
+                  "rules": {
+                    "required": false
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "account_number",
+                  "label": "Account Number",
+                  "type": "text",
+                  "options": null,
+                  "rules": {
+                    "required": false
+                  },
+                  "value": "",
+                  "values": []
+                }
+              ]
+            },
+            {
+              "content_id": "content_1_2",
+              "title": "Living Info",
+              "fields": [
+                {
+                  "id": "province",
+                  "label": "Province",
+                  "type": "drop_down",
+                  "options": [
+                    "Phnom Penh",
+                    "Takoe",
+                    "Kratie",
+                    "Prey Veng"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "district",
+                  "label": "District",
+                  "type": "drop_down",
+                  "options": [
+                      "Chamkarmon",
+                      "Daun Penh",
+                      "7 Makara",
+                      "Tuol Kouk",
+                      "Russey Keo",
+                      "Sen Sok",
+                      "Meanchey",
+                      "Chbar Ampov",
+                      "Dangkor",
+                      "Por Senchey",
+                      "Prek Pnov",
+                      "Chroy Changvar"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "commune",
+                  "label": "Commune",
+                  "type": "drop_down",
+                  "options": [
+                      "Sangkat Phsar Thmei Ti Muoy",
+                      "Sangkat Phsar Thmei Ti Pir",
+                      "Sangkat Phsar Thmei Ti Bei",
+                      "Sangkat Wat Phnom",
+                      "Sangkat Srah Chak",
+                      "Sangkat Boeng Reang",
+                      "Sangkat Chakto Mukh",
+                      "Sangkat Chey Chumneas",
+                      "Sangkat Phsar Kandal Ti Muoy",
+                      "Sangkat Phsar Kandal Ti Pir",
+                      "Sangkat Voat Phnum"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "village",
+                  "label": "Village",
+                  "type": "drop_down",
+                  "options": [
+                      "Sangkat Phsar Thmei Ti Muoy",
+                      "Sangkat Phsar Thmei Ti Pir",
+                      "Sangkat Phsar Thmei Ti Bei",
+                      "Sangkat Wat Phnom",
+                      "Sangkat Srah Chak",
+                      "Sangkat Boeng Reang",
+                      "Sangkat Chakto Mukh",
+                      "Sangkat Chey Chumneas",
+                      "Sangkat Phsar Kandal Ti Muoy",
+                      "Sangkat Phsar Kandal Ti Pir",
+                      "Sangkat Voat Phnum"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "living_since",
+                  "label": "Living Since",
+                  "type": "single_select",
+                  "options": [
+                      "1 Month Plus",
+                      "3 Months Plus",
+                      "6 Months Plus",
+                      "1 Year Plus",
+                      "3 Years Plus",
+                      "5 Years Plus"
+                  ],
+                  "rules": {
+                    "required": true
+                  },
+                  "value": "",
+                  "values": []
+                },
+                {
+                  "id": "house_ownership",
+                  "label": "House Ownership",
+                  "type": "single_select",
+                  "options": [
+                      "Myself",
+                      "Spouse",
+                      "Parent",
+                      "Relative",
+                      "Friend",
+                      "Other (Rental)"
+                  ],
                   "rules": {
                     "required": true
                   },
@@ -185,34 +361,161 @@
                   "values": []
                 }
               ]
+            },
+            
+            {
+              "content_id": "content_1_3",
+              "title": "Place Of Birth",
+              "fields": [
+                  {
+                    "id": "province",
+                    "label": "Province",
+                    "type": "drop_down",
+                    "options": [
+                      "Phnom Penh",
+                      "Takoe",
+                      "Kratie",
+                      "Prey Veng"
+                    ],
+                    "rules": {
+                      "required": true
+                    },
+                    "value": "",
+                    "values": []
+                  },
+                  {
+                    "id": "district",
+                    "label": "District",
+                    "type": "drop_down",
+                    "options": [
+                        "Chamkarmon",
+                        "Daun Penh",
+                        "7 Makara",
+                        "Tuol Kouk",
+                        "Russey Keo",
+                        "Sen Sok",
+                        "Meanchey",
+                        "Chbar Ampov",
+                        "Dangkor",
+                        "Por Senchey",
+                        "Prek Pnov",
+                        "Chroy Changvar"
+                    ],
+                    "rules": {
+                      "required": true
+                    },
+                    "value": "",
+                    "values": []
+                  },
+                  {
+                    "id": "commune",
+                    "label": "Commune",
+                    "type": "drop_down",
+                    "options": [
+                        "Sangkat Phsar Thmei Ti Muoy",
+                        "Sangkat Phsar Thmei Ti Pir",
+                        "Sangkat Phsar Thmei Ti Bei",
+                        "Sangkat Wat Phnom",
+                        "Sangkat Srah Chak",
+                        "Sangkat Boeng Reang",
+                        "Sangkat Chakto Mukh",
+                        "Sangkat Chey Chumneas",
+                        "Sangkat Phsar Kandal Ti Muoy",
+                        "Sangkat Phsar Kandal Ti Pir",
+                        "Sangkat Voat Phnum"
+                    ],
+                    "rules": {
+                      "required": true
+                    },
+                    "value": "",
+                    "values": []
+                  },
+                  {
+                    "id": "village",
+                    "label": "Village",
+                    "type": "drop_down",
+                    "options": [
+                        "Sangkat Phsar Thmei Ti Muoy",
+                        "Sangkat Phsar Thmei Ti Pir",
+                        "Sangkat Phsar Thmei Ti Bei",
+                        "Sangkat Wat Phnom",
+                        "Sangkat Srah Chak",
+                        "Sangkat Boeng Reang",
+                        "Sangkat Chakto Mukh",
+                        "Sangkat Chey Chumneas",
+                        "Sangkat Phsar Kandal Ti Muoy",
+                        "Sangkat Phsar Kandal Ti Pir",
+                        "Sangkat Voat Phnum"
+                    ],
+                    "rules": {
+                      "required": true
+                    },
+                    "value": "",
+                    "values": []
+                  }
+              ]
+            },
+            
+            {
+              "content_id": "content_1_4",
+              "title": "Family Info",
+              "fields": [
+                  {
+                    "id": "number_of_family",
+                    "label": "Number Of Family",
+                    "type": "text",
+                    "options": null,
+                    "rules": {
+                      "required": true
+                    },
+                    "value": "",
+                    "values": []
+                  }
+              ]
             }
+
           ]
         },
         {
+          "section_id": "section_2",
+          "section": "#2 Financial Information",
+          "content": []
+        },
+        {
           "section_id": "section_3",
-          "section": "Financial Information",
-          "content": [
-            {
-              "content_id": "content_3_1",
-              "title": "Income Details",
-              "fields": [
-                {
-                  "id": "annual_income",
-                  "label": "Annual Income",
-                  "type": "text",
-                  "options": null,
-                  "rules": {
-                    "required": true,
-                    "numeric": true,
-                    "min": 0
-                  },
-                  "value": "",
-                  "values": []
-                }
-              ]
-            }
-          ]
-        }
+          "section": "#3 Co-Borrower",
+          "content": []
+        },
+        {
+          "section_id": "section_5",
+          "section": "#5 Loan Information",
+          "content": []
+        },
+        {
+          "section_id": "section_6",
+          "section": "#6 CBC History",
+          "content": []
+        },
+        {
+          "section_id": "section_7",
+          "section": "#7 Loan History",
+          "content": []
+        },
+        {
+          "section_id": "section_8",
+          "section": "#8 Extra",
+          "content": []
+        },
+        {
+          "section_id": "section_9",
+          "section": "#9 Collateral ",
+          "content": []
+        },
+        {
+          "section_id": "section_10",
+          "section": "#10 Document",
+          "content": []
+        },
       ]
     }
   ]

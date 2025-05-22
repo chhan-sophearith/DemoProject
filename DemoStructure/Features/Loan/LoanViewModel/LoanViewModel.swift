@@ -12,6 +12,7 @@ class LoanViewModel: ObservableObject {
     
     @Published var loanTypes: LoanTypeModel?
     @Published var loanTypeIndex: Int = 0
+    @Published var indexSelected = -1
     
     func loadJSON<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
         guard let url = Bundle.main.url(forResource: filename, withExtension: "json") else {

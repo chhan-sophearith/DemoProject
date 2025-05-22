@@ -8,7 +8,7 @@
 import SwiftUI
 
 class MainViewModel: ObservableObject {
-    @Published var tabIndex: Int = 0
+    @Published var tabIndex: Int = 1
     
     let mainTabList: [TabItemModel] = [
         .init(icon: .dashboardIc, title: "Dashboard"),
